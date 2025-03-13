@@ -127,12 +127,36 @@
                 color: #9CA3AF;
             }
         }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <h1>Menu</h1>
+        <button class="logout-btn" onclick="logout()">Déconnexion</button>
+                    <script>
+                        function logout() {
+                            // Simule la déconnexion (vous pouvez ajouter une requête AJAX ici si besoin)
+                            alert("Vous avez été déconnecté !");
+                            
+                            // Redirige vers une autre page (par exemple, la page de connexion)
+                            window.location.href = "connexion.php"; // Remplacez par l'URL souhaitée
+                        }
+                    </script>
     </header>
 
     <main class="menu-container">
